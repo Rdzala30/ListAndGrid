@@ -13,25 +13,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:background="#E8A0A0"
+        android:background="#A0B0E8"
         >
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:text="RecylerView App"
-            android:textSize="25sp"
-            android:textStyle="bold"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:text="Student List and Grid"
+            android:textColor="#795548"
+            android:textSize="30sp"
+            android:textStyle="bold"
             tools:ignore="HardcodedText" />
     </LinearLayout>
 
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recylerViewId"
+        android:id="@+id/RecyclerViewId"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -48,6 +48,17 @@
         android:padding="16dp">
 
         <Button
+            android:id="@+id/listViewBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:text="List-View"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
             android:id="@+id/gridViewBtn"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
@@ -57,17 +68,6 @@
             android:text="Grid-View"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="ButtonStyle,HardcodedText" />
-
-        <Button
-            android:id="@+id/listViewBtn"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:padding="10dp"
-            android:text="List-View"
             tools:ignore="ButtonStyle,HardcodedText" />
 
     </LinearLayout>

@@ -9,9 +9,9 @@ public class Student {
     private final String name;
 
     // Constructor to initialize Student object with image and name
-    public Student(int studentImgId, String name) {
+    public Student(int studentImgId, String Studentname) {
         this.studentImgId = studentImgId;
-        this.name = name;
+        this.name = Studentname;
     }
 
     // Getter method to retrieve user image resource ID

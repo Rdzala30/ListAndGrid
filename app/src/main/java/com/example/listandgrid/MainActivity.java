@@ -20,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Initialize UI components
-        recyclerView = findViewById(R.id.recylerViewId);
+        recyclerView = findViewById(R.id.RecyclerViewId);
         Button listView = findViewById(R.id.listViewBtn);
         Button gridView = findViewById(R.id.gridViewBtn);
 
         // Create a list of users
-        initUserList();
+        studentList();
 
         // Set up RecyclerView with LinearLayoutManager
         setupRecyclerView();
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Initialize the list of users
-    private void initUserList() {
+    private void studentList() {
         studentList.add(new Student(R.drawable.profile_pic1, "Virat Kohli"));
         studentList.add(new Student(R.drawable.profile_pic2, "Sachin"));
         studentList.add(new Student(R.drawable.profile_pic4, "Rohit Sharma"));
