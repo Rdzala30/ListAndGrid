@@ -11,7 +11,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final List<User> userList = new ArrayList<>();
+    private final List<Student> studentList = new ArrayList<>();
     private RecyclerView recyclerView;
 
     @Override
@@ -37,32 +37,32 @@ public class MainActivity extends AppCompatActivity {
 
     // Initialize the list of users
     private void initUserList() {
-        userList.add(new User(R.drawable.profile_pic1, "Virat Kohli"));
-        userList.add(new User(R.drawable.profile_pic2, "Sachin"));
-        userList.add(new User(R.drawable.profile_pic4, "Rohit Sharma"));
-        userList.add(new User(R.drawable.profile_pic5, "MS Dhoni"));
-        userList.add(new User(R.drawable.profile_pic6, "Ravi Jadeja"));
-        userList.add(new User(R.drawable.profile_pic7, "S. Gill"));
-        userList.add(new User(R.drawable.profile_pic9, "Steven Smith "));
-        userList.add(new User(R.drawable.profile_pic10, "Joe Root"));
-        userList.add(new User(R.drawable.profile_pic11, "Jasprit Bumrah"));
-        userList.add(new User(R.drawable.profile_pic12, "Mohd. Siraj"));
-        userList.add(new User(R.drawable.profile_pic13, "Kuldeep Yadav"));
-        userList.add(new User(R.drawable.profile_pic14, "KL Rahul"));
-        userList.add(new User(R.drawable.profile_pic1, "Mohd. Shami"));
-        userList.add(new User(R.drawable.profile_pic2, "Shikhar Dhawan"));
-        userList.add(new User(R.drawable.profile_pic3, "Shreyas Iyer"));
-        userList.add(new User(R.drawable.profile_pic4, "Hardik Pandya"));
-        userList.add(new User(R.drawable.profile_pic5, "Surya Kumar"));
-        userList.add(new User(R.drawable.profile_pic6, "Ben Stokes"));
-        userList.add(new User(R.drawable.profile_pic7, "Ravi Ashwin"));
-        userList.add(new User(R.drawable.profile_pic9, "Suresh Raina"));
+        studentList.add(new Student(R.drawable.profile_pic1, "Virat Kohli"));
+        studentList.add(new Student(R.drawable.profile_pic2, "Sachin"));
+        studentList.add(new Student(R.drawable.profile_pic4, "Rohit Sharma"));
+        studentList.add(new Student(R.drawable.profile_pic5, "MS Dhoni"));
+        studentList.add(new Student(R.drawable.profile_pic6, "Ravi Jadeja"));
+        studentList.add(new Student(R.drawable.profile_pic7, "S. Gill"));
+        studentList.add(new Student(R.drawable.profile_pic9, "Steven Smith "));
+        studentList.add(new Student(R.drawable.profile_pic10, "Joe Root"));
+        studentList.add(new Student(R.drawable.profile_pic11, "Jasprit Bumrah"));
+        studentList.add(new Student(R.drawable.profile_pic12, "Mohd. Siraj"));
+        studentList.add(new Student(R.drawable.profile_pic13, "Kuldeep Yadav"));
+        studentList.add(new Student(R.drawable.profile_pic14, "KL Rahul"));
+        studentList.add(new Student(R.drawable.profile_pic1, "Mohd. Shami"));
+        studentList.add(new Student(R.drawable.profile_pic2, "Shikhar Dhawan"));
+        studentList.add(new Student(R.drawable.profile_pic3, "Shreyas Iyer"));
+        studentList.add(new Student(R.drawable.profile_pic4, "Hardik Pandya"));
+        studentList.add(new Student(R.drawable.profile_pic5, "Surya Kumar"));
+        studentList.add(new Student(R.drawable.profile_pic6, "Ben Stokes"));
+        studentList.add(new Student(R.drawable.profile_pic7, "Ravi Ashwin"));
+        studentList.add(new Student(R.drawable.profile_pic9, "Suresh Raina"));
         // Add more users as needed
     }
 
     // Set up RecyclerView with LinearLayoutManager
     private void setupRecyclerView() {
-        RecyleAdapter recycleAdapter = new RecyleAdapter(userList, this);
+        RecyleAdapter recycleAdapter = new RecyleAdapter(studentList, this);
         recyclerView.setAdapter(recycleAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }

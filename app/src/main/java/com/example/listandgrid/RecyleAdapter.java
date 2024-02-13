@@ -12,11 +12,11 @@ import java.util.List;
 
 public class RecyleAdapter extends RecyclerView.Adapter<RecyleAdapter.UserViewHolder> {
 
-    private final List<User> userList;
+    private final List<Student> userList;
     private final Context context;
 
     // Constructor to initialize the adapter with data and context
-    public RecyleAdapter(List<User> userList, Context context) {
+    public RecyleAdapter(List<Student> userList, Context context) {
         this.userList = userList;
         this.context = context;
     }
@@ -34,11 +34,11 @@ public class RecyleAdapter extends RecyclerView.Adapter<RecyleAdapter.UserViewHo
     // Bind data to the ViewHolder
     @Override
     public void onBindViewHolder(@NonNull UserViewHolder holder, int position) {
-        // Get the User object at the specified position
-        User user = userList.get(position);
-        // Set the user's image and name to the corresponding views in the ViewHolder
-        holder.imageView.setImageResource(user.getUserImg());
-        holder.nameView.setText(user.getName());
+        // Get the Student object at the specified position
+        Student student = userList.get(position);
+        // Set the student's image and name to the corresponding views in the ViewHolder
+        holder.imageView.setImageResource(student.getStudentImg());
+        holder.nameView.setText(student.getName());
     }
 
     // Return the total number of items in the data set
